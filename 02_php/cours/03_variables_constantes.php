@@ -225,6 +225,29 @@
 
           echo HEURE;
 
+          echo '<h2 class="mt-5"> Les variables prédéfinies : super-globale </h2> ';
+
+          echo $_SERVER["HTTP_HOST"] ;
+          echo '<pre>';
+          var_dump($_SERVER);
+          echo '</pre>' ;
+
+          echo "<br>";
+
+         // echo $_SERVER;
+
+         var_dump ($_SERVER);
+          function dump($tableau){
+            echo '<pre>';
+            var_dump($tableau);
+            echo '</pre>';
+          }
+
+          echo "<br>";
+
+          dump($_SERVER);
+
+
 
 
 
